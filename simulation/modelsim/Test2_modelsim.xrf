@@ -1,4 +1,6 @@
 vendor_name = ModelSim
+source_file = 1, C:/altera/13.0/quartus/bin64/projecten/Test2/int_rom.qip
+source_file = 1, C:/altera/13.0/quartus/bin64/projecten/Test2/int_rom.v
 source_file = 1, C:/altera/13.0/quartus/bin64/projecten/Test2/Test2.sv
 source_file = 1, C:/altera/13.0/quartus/bin64/projecten/Test2/ramtest.qip
 source_file = 1, C:/altera/13.0/quartus/bin64/projecten/Test2/ramtest.v

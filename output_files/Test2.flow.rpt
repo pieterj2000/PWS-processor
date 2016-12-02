@@ -1,5 +1,5 @@
 Flow report for Test2
-Fri Dec 02 10:31:05 2016
+Fri Dec 02 12:47:23 2016
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Fri Dec 02 10:31:05 2016      ;
+; Flow Status                        ; Successful - Fri Dec 02 12:47:23 2016      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; Test2                                      ;
 ; Top-level Entity Name              ; Tester                                     ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/02/2016 10:30:52 ;
+; Start date & time ; 12/02/2016 12:47:10 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Test2               ;
 +-------------------+---------------------+
@@ -75,13 +75,17 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 84115107798687.148067105206960        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 84115107798687.148067923011016        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)       ; <None>        ; --          ; --             ;
+; IP_TOOL_NAME                        ; ROM: 1-PORT                           ; --            ; --          ; --             ;
 ; IP_TOOL_NAME                        ; RAM: 1-PORT                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
 ; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; int_rom_inst.v                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; int_rom_bb.v                          ; --            ; --          ; --             ;
 ; MISC_FILE                           ; ramtest_bb.v                          ; --            ; --          ; --             ;
 ; PARTITION_COLOR                     ; 16764057                              ; --            ; Tester      ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; Tester      ; Top            ;
@@ -98,12 +102,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 434 MB              ; 00:00:02                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 434 MB              ; 00:00:01                           ;
 ; Fitter                    ; 00:00:04     ; 1.0                     ; 579 MB              ; 00:00:04                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 412 MB              ; 00:00:01                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 412 MB              ; 00:00:01                           ;
 ; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 383 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 372 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:08     ; --                      ; --                  ; 00:00:09                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 372 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:11     ; --                      ; --                  ; 00:00:08                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
