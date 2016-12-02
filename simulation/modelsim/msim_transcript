@@ -1,0 +1,370 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do Test2_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0/quartus/bin64/projecten/Test2 {C:/altera/13.0/quartus/bin64/projecten/Test2/ramtest.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ramtest
+# 
+# Top level modules:
+# 	ramtest
+# vlog -sv -work work +incdir+C:/altera/13.0/quartus/bin64/projecten/Test2 {C:/altera/13.0/quartus/bin64/projecten/Test2/Test2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Tester
+# -- Compiling module ALUcontroller
+# -- Compiling module ALU
+# -- Compiling module adder
+# -- Compiling module substractor
+# -- Compiling module bitadder
+# -- Compiling module bitsubber
+# 
+# Top level modules:
+# 	Tester
+# 	ALUcontroller
+# 
+vsim +altera -Lf altera_mf_ver -do Test2_run_msim_rtl_verilog.do -l msim_transcript -gui work.Tester
+# vsim +altera -Lf altera_mf_ver -do Test2_run_msim_rtl_verilog.do -l msim_transcript -gui work.Tester 
+# Loading sv_std.std
+# Loading work.Tester
+# Loading work.ramtest
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# do Test2_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/altera/13.0/quartus/bin64/projecten/Test2 {C:/altera/13.0/quartus/bin64/projecten/Test2/ramtest.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ramtest
+# 
+# Top level modules:
+# 	ramtest
+# vlog -sv -work work +incdir+C:/altera/13.0/quartus/bin64/projecten/Test2 {C:/altera/13.0/quartus/bin64/projecten/Test2/Test2.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Tester
+# -- Compiling module ALUcontroller
+# -- Compiling module ALU
+# -- Compiling module adder
+# -- Compiling module substractor
+# -- Compiling module bitadder
+# -- Compiling module bitsubber
+# 
+# Top level modules:
+# 	Tester
+# 	ALUcontroller
+# 
+force -freeze sim:/Tester/clock 0 0, 1 {50 ps} -r 100
+run
+run
+run
+add wave -position insertpoint  \
+sim:/Tester/clock \
+sim:/Tester/ren \
+sim:/Tester/wen
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/Tester/wen Pu1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/Tester/data 11110010 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/Tester/data 000000000000011 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/Tester/wen Pu0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/Tester/data 21111111111111111111111111111 0
+# Invalid binary digit: 2.
+# ** Error: (vsim-4011) Invalid force value: 21111111111111111111111111111 0.
+# 
+force -freeze sim:/Tester/data 1111111111111111111 0
+force -freeze sim:/Tester/wen Pu1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

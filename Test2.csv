@@ -1,0 +1,23 @@
+# system info Test2 on 2016.12.01.12:12:39
+system_info:
+name,value
+DEVICE,EP2C5T144C6
+DEVICE_FAMILY,Cyclone II
+GENERATION_ID,1480590735
+#
+#
+# Files generated for Test2 on 2016.12.01.12:12:39
+files:
+filepath,kind,attributes,module,is_top
+Test2/simulation/Test2.v,VERILOG,,Test2,true
+Test2/simulation/submodules/Test2_onchip_memory2_0.hex,HEX,,Test2_onchip_memory2_0,false
+Test2/simulation/submodules/Test2_onchip_memory2_0.v,VERILOG,,Test2_onchip_memory2_0,false
+Test2/simulation/submodules/altera_reset_controller.v,VERILOG,,altera_reset_controller,false
+Test2/simulation/submodules/altera_reset_synchronizer.v,VERILOG,,altera_reset_controller,false
+Test2/simulation/submodules/altera_reset_controller.sdc,SDC,,altera_reset_controller,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+Test2.onchip_memory2_0,Test2_onchip_memory2_0
+Test2.rst_controller,altera_reset_controller
