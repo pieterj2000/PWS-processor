@@ -118,6 +118,6 @@ endmodule
 // Retrieval info: GEN_FILE: TYPE_NORMAL ramtest.inc FALSE
 // Retrieval info: GEN_FILE: TYPE_NORMAL ramtest.cmp FALSE
 // Retrieval info: GEN_FILE: TYPE_NORMAL ramtest.bsf FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL ramtest_inst.v FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL ramtest_inst.v TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL ramtest_bb.v TRUE
 // Retrieval info: LIB_FILE: altera_mf

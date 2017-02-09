@@ -5,6 +5,6 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+C:/altera/13.0/quartus/bin64/projecten/Test2 {C:/altera/13.0/quartus/bin64/projecten/Test2/ramtest.v}
-vlog -sv -work work +incdir+C:/altera/13.0/quartus/bin64/projecten/Test2 {C:/altera/13.0/quartus/bin64/projecten/Test2/Test2.sv}
+vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/ramtest.v}
+vlog -sv -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/Test2.sv}
 
