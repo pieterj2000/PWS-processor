@@ -120,22 +120,19 @@ vsim +altera -Lf altera_mf_ver -Lf altera_mf -do Test2_run_msim_rtl_verilog.do -
 # 
 add wave -position end  /FDE_processor/pc
 add wave -position end  /FDE_processor/clock
+add wave -position end  /FDE_processor/insIdentifier
+add wave -position end  /FDE_processor/argument1
+add wave -position end  /FDE_processor/argument2
+add wave -position end  /FDE_processor/eersteKlok
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: DELLSANDRA  Hostname: DELL201111  ProcessID: 11068
 # 
-#           Attempting to use alternate WLF file "./wlft2y8xdj".
+#           Attempting to use alternate WLF file "./wlft8bd058".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlft2y8xdj
+#           Using alternate file: ./wlft8bd058
 # 
-add wave -position end  /FDE_processor/insIdentifier
-add wave -position end  /FDE_processor/argument1
-add wave -position end  /FDE_processor/argument2
-add wave -position end  /FDE_processor/debugOut
-add wave -position end  /FDE_processor/prevGedaan
-add wave -position end  /FDE_processor/eersteKlok
-add wave -position end  /FDE_processor/deca/outputArgument
 add wave -position end  /FDE_processor/deca/instructieOpCode
 add wave -position end  /FDE_processor/deca/bufferVal
 add wave -position end  /FDE_processor/deca/bufferVal2
@@ -143,11 +140,7 @@ add wave -position end  /FDE_processor/deca/write_enable
 add wave -position end  /FDE_processor/deca/chip_enable
 add wave -position end  /FDE_processor/deca/valueIn
 add wave -position end  /FDE_processor/deca/address
-add wave -position end  /FDE_processor/deca/argumentBuffer
-add wave -position end  /FDE_processor/deca/argument2Buffer
-add wave -position end  /FDE_processor/deca/instructieBuffer
-add wave -position end  /FDE_processor/deca/gevondenInstructie
-add wave -position end  /FDE_processor/deca/i
+add wave -position end  /FDE_processor/deca/outputArgument
 add wave -position end  /FDE_processor/deca/regControl/valueOut
 add wave -position end  /FDE_processor/deca/regControl/gpr
 run

@@ -138,18 +138,21 @@ reg[3:0] address;
 					  end
 		// SUB A, B in A
 	8'b00000010 : begin
+							instructieOpCode = 6'b010000;
 							address = argument1[3:0];
 							write_enable = 0;
 							chip_enable = 1;
 							#1
 							chip_enable = 0;
 							bufferVal = valueOut;
-							instructieOpCode = 6'010000;
-							bufferVal2 = argument2[3:0];
+							address = argument2[3:0];
+							chip_enable = 1;
 							#1
-							outputArgument = outputArgumentBuffer;
-							valueIn = outputArgumentBuffer;
+							chip_enable = 0;
+							bufferVal2 = valueOut;
+							#1
 							address = argument1[3:0];
+							valueIn = outputArgument;
 							write_enable = 1;
 							chip_enable = 1;
 							#1
@@ -176,18 +179,21 @@ reg[3:0] address;
 					  end
 					// XOR A, B in A
 		8'b00000011 : begin
+							instructieOpCode = 6'b100000;
 							address = argument1[3:0];
 							write_enable = 0;
 							chip_enable = 1;
 							#1
 							chip_enable = 0;
 							bufferVal = valueOut;
-							instructieOpCode = 6'100000;
-							bufferVal2 = argument2[3:0];
+							address = argument2[3:0];
+							chip_enable = 1;
 							#1
-							outputArgument = outputArgumentBuffer;
-							valueIn = outputArgumentBuffer;
+							chip_enable = 0;
+							bufferVal2 = valueOut;
+							#1
 							address = argument1[3:0];
+							valueIn = outputArgument;
 							write_enable = 1;
 							chip_enable = 1;
 							#1
@@ -195,18 +201,21 @@ reg[3:0] address;
 					  end
 		// OR A, B in A
 	8'b00000100 : begin
+							instructieOpCode = 6'b000010;
 							address = argument1[3:0];
 							write_enable = 0;
 							chip_enable = 1;
 							#1
 							chip_enable = 0;
 							bufferVal = valueOut;
-							instructieOpCode = 6'000010;
-							bufferVal2 = argument2[3:0];
+							address = argument2[3:0];
+							chip_enable = 1;
 							#1
-							outputArgument = outputArgumentBuffer;
-							valueIn = outputArgumentBuffer;
+							chip_enable = 0;
+							bufferVal2 = valueOut;
+							#1
 							address = argument1[3:0];
+							valueIn = outputArgument;
 							write_enable = 1;
 							chip_enable = 1;
 							#1
@@ -214,18 +223,21 @@ reg[3:0] address;
 					  end
 					  // AND A, B in A
 		8'b00000101 : begin
+							instructieOpCode = 6'b000100;
 							address = argument1[3:0];
 							write_enable = 0;
 							chip_enable = 1;
 							#1
 							chip_enable = 0;
 							bufferVal = valueOut;
-							instructieOpCode = 6'000100;
-							bufferVal2 = argument2[3:0];
+							address = argument2[3:0];
+							chip_enable = 1;
 							#1
-							outputArgument = outputArgumentBuffer;
-							valueIn = outputArgumentBuffer;
+							chip_enable = 0;
+							bufferVal2 = valueOut;
+							#1
 							address = argument1[3:0];
+							valueIn = outputArgument;
 							write_enable = 1;
 							chip_enable = 1;
 							#1
@@ -233,18 +245,21 @@ reg[3:0] address;
 					  end
 		// NOT A, B in A
 	8'b00000110 : begin
+							instructieOpCode = 6'b000001;
 							address = argument1[3:0];
 							write_enable = 0;
 							chip_enable = 1;
 							#1
 							chip_enable = 0;
 							bufferVal = valueOut;
-							instructieOpCode = 6'000001;
-							bufferVal2 = argument2[3:0];
+							address = argument2[3:0];
+							chip_enable = 1;
 							#1
-							outputArgument = outputArgumentBuffer;
-							valueIn = outputArgumentBuffer;
+							chip_enable = 0;
+							bufferVal2 = valueOut;
+							#1
 							address = argument1[3:0];
+							valueIn = outputArgument;
 							write_enable = 1;
 							chip_enable = 1;
 							#1

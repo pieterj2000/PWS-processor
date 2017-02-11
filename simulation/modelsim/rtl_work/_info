@@ -14,7 +14,7 @@ L0 170
 Z5 OV;L;10.1d;51
 r1
 31
-Z6 !s108 1486850339.970000
+Z6 !s108 1486852338.370000
 Z7 !s107 D:/Onderneming/16-bits processor/PWS-processor/ALU.v|
 Z8 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Onderneming/16-bits processor/PWS-processor|D:/Onderneming/16-bits processor/PWS-processor/ALU.v|
 Z9 o-vlog01compat -work work -O0
@@ -61,7 +61,7 @@ n@a@l@ucontroller
 !i10b 1
 !s100 2BG6=0K<^A[]:I^jPO<0^1
 !s85 0
-!s108 1486850340.540000
+!s108 1486852338.707000
 !s107 D:/Onderneming/16-bits processor/PWS-processor/ALUcontroller.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Onderneming/16-bits processor/PWS-processor|D:/Onderneming/16-bits processor/PWS-processor/ALUcontroller.v|
 !s101 -O0
@@ -122,15 +122,15 @@ n@f@d@e_processor
 !i10b 1
 !s100 CX=iOi;NFeBM1]`QFbJ>i2
 !s85 0
-!s108 1486850340.765000
+!s108 1486852338.826000
 !s107 D:/Onderneming/16-bits processor/PWS-processor/FDE_processor.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Onderneming/16-bits processor/PWS-processor|D:/Onderneming/16-bits processor/PWS-processor/FDE_processor.v|
 !s101 -O0
 vinstructie_decoder
-ITBjZA_1_cA=o[zFlGX7;V1
+I]UjXHRCS2IKM50n2d9UTU1
 V2GBXY8i1g>I@WbQ@;QSIQ2
 R1
-w1486849504
+w1486852283
 8D:/Onderneming/16-bits processor/PWS-processor/Instructie_decoder.v
 FD:/Onderneming/16-bits processor/PWS-processor/Instructie_decoder.v
 L0 1
@@ -140,9 +140,9 @@ r1
 R9
 R10
 !i10b 1
-!s100 9Mm@XRi0Si]U@lKL0ll`21
+!s100 z`jf<9_Z:z`5=IMhP1i=O0
 !s85 0
-!s108 1486850341.200000
+!s108 1486852339.039000
 !s107 D:/Onderneming/16-bits processor/PWS-processor/Instructie_decoder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Onderneming/16-bits processor/PWS-processor|D:/Onderneming/16-bits processor/PWS-processor/Instructie_decoder.v|
 !s101 -O0
@@ -162,7 +162,7 @@ R10
 !i10b 1
 !s100 `WaIORBRD?0DL`nB05d2Y2
 !s85 0
-!s108 1486850340.889000
+!s108 1486852338.930000
 !s107 D:/Onderneming/16-bits processor/PWS-processor/program_rom.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Onderneming/16-bits processor/PWS-processor|D:/Onderneming/16-bits processor/PWS-processor/program_rom.v|
 !s101 -O0
@@ -180,7 +180,7 @@ R5
 r1
 !s85 0
 31
-!s108 1486850341.322000
+!s108 1486852339.173000
 !s107 D:/Onderneming/16-bits processor/PWS-processor/Register_controller.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Onderneming/16-bits processor/PWS-processor|D:/Onderneming/16-bits processor/PWS-processor/Register_controller.v|
 !s101 -O0

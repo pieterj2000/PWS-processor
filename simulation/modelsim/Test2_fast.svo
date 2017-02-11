@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Web Edition"
 
-// DATE "02/11/2017 22:58:22"
+// DATE "02/11/2017 23:31:39"
 
 // 
 // Device: Altera EP2C5T144C6 Package TQFP144
@@ -31,8 +31,8 @@
 module FDE_processor (
 	pc,
 	clock);
-output 	reg [15:0] pc ;
-output 	reg clock ;
+output 	[15:0] pc;
+output 	clock;
 
 // Design Ports Information
 // pc[0]	=>  Location: PIN_70,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
