@@ -5,9 +5,7 @@ module ALUcontroller(val1, val2, output3, opFlag);
   input [15:0] val1;
   input [15:0] val2;
   
-  reg [
-  
-  7:0] val3;
+  reg [7:0] val3;
   reg [7:0] val4;
   reg [7:0] val5;
   reg [7:0] val6;

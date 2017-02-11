@@ -10,27 +10,65 @@
 # ** Warning: Copied D:\Altera Quartus II\Software\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/ramtest.v}
+# vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/ALU.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ramtest
+# -- Compiling module ALU
+# -- Compiling module adder
+# -- Compiling module substractor
+# -- Compiling module bitadder
+# -- Compiling module bitsubber
 # 
 # Top level modules:
-# 	ramtest
-# vlog -sv -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/Test2.sv}
+# 	ALU
+# vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/ALUcontroller.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Test2
+# -- Compiling module ALUcontroller
 # 
 # Top level modules:
-# 	Test2
+# 	ALUcontroller
+# vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/FDE_processor.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FDE_processor
 # 
-vsim +altera -Lf altera_mf_ver -Lf altera_mf -do Test2_run_msim_rtl_verilog.do -l msim_transcript -gui work.Test2
-# vsim +altera -Lf altera_mf_ver -Lf altera_mf -do Test2_run_msim_rtl_verilog.do -l msim_transcript -gui work.Test2 
-# Loading sv_std.std
-# Loading work.Test2
-# Loading work.ramtest
+# Top level modules:
+# 	FDE_processor
+# vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/program_rom.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module program_rom
+# 
+# Top level modules:
+# 	program_rom
+# vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/Instructie_decoder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instructie_decoder
+# 
+# Top level modules:
+# 	instructie_decoder
+# vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/Register_controller.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module register_controller
+# 
+# Top level modules:
+# 	register_controller
+# 
+vsim +altera -Lf altera_mf_ver -Lf altera_mf -do Test2_run_msim_rtl_verilog.do -l msim_transcript -gui work.FDE_processor
+# vsim +altera -Lf altera_mf_ver -Lf altera_mf -do Test2_run_msim_rtl_verilog.do -l msim_transcript -gui work.FDE_processor 
+# Loading work.FDE_processor
+# Loading work.instructie_decoder
+# Loading work.ALUcontroller
+# Loading work.ALU
+# Loading work.adder
+# Loading work.bitadder
+# Loading work.substractor
+# Loading work.bitsubber
+# Loading work.register_controller
+# Loading work.program_rom
 # Loading altera_mf_ver.altsyncram
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) D:/Onderneming/16-bits processor/PWS-processor/FDE_processor.v(56): [PCDPC] - Port size (11 or 11) does not match connection size (16) for port 'address'. The port definition is at: D:/Onderneming/16-bits processor/PWS-processor/program_rom.v(40).
+# 
+#         Region: /FDE_processor/rom
 # do Test2_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -39,30 +77,77 @@ vsim +altera -Lf altera_mf_ver -Lf altera_mf -do Test2_run_msim_rtl_verilog.do -
 # vmap work rtl_work
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/ramtest.v}
+# vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/ALU.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ramtest
+# -- Compiling module ALU
+# -- Compiling module adder
+# -- Compiling module substractor
+# -- Compiling module bitadder
+# -- Compiling module bitsubber
 # 
 # Top level modules:
-# 	ramtest
-# vlog -sv -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/Test2.sv}
+# 	ALU
+# vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/ALUcontroller.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Test2
+# -- Compiling module ALUcontroller
 # 
 # Top level modules:
-# 	Test2
+# 	ALUcontroller
+# vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/FDE_processor.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FDE_processor
 # 
-add wave -position end  /Test2/wen
-add wave -position end  /Test2/clock
-add wave -position end  /Test2/address
-add wave -position end  /Test2/data
+# Top level modules:
+# 	FDE_processor
+# vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/program_rom.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module program_rom
+# 
+# Top level modules:
+# 	program_rom
+# vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/Instructie_decoder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module instructie_decoder
+# 
+# Top level modules:
+# 	instructie_decoder
+# vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/Register_controller.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module register_controller
+# 
+# Top level modules:
+# 	register_controller
+# 
+add wave -position end  /FDE_processor/pc
+add wave -position end  /FDE_processor/clock
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: DELLSANDRA  Hostname: DELL201111  ProcessID: 11068
 # 
-#           Attempting to use alternate WLF file "./wlftqym5yw".
+#           Attempting to use alternate WLF file "./wlft2y8xdj".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftqym5yw
+#           Using alternate file: ./wlft2y8xdj
 # 
+add wave -position end  /FDE_processor/insIdentifier
+add wave -position end  /FDE_processor/argument1
+add wave -position end  /FDE_processor/argument2
+add wave -position end  /FDE_processor/debugOut
+add wave -position end  /FDE_processor/prevGedaan
+add wave -position end  /FDE_processor/eersteKlok
+add wave -position end  /FDE_processor/deca/outputArgument
+add wave -position end  /FDE_processor/deca/instructieOpCode
+add wave -position end  /FDE_processor/deca/bufferVal
+add wave -position end  /FDE_processor/deca/bufferVal2
+add wave -position end  /FDE_processor/deca/write_enable
+add wave -position end  /FDE_processor/deca/chip_enable
+add wave -position end  /FDE_processor/deca/valueIn
+add wave -position end  /FDE_processor/deca/address
+add wave -position end  /FDE_processor/deca/argumentBuffer
+add wave -position end  /FDE_processor/deca/argument2Buffer
+add wave -position end  /FDE_processor/deca/instructieBuffer
+add wave -position end  /FDE_processor/deca/gevondenInstructie
+add wave -position end  /FDE_processor/deca/i
+add wave -position end  /FDE_processor/deca/regControl/valueOut
+add wave -position end  /FDE_processor/deca/regControl/gpr
 run

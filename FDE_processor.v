@@ -1,36 +1,59 @@
-module FDE_proc(pc, clock, ir, out, pcOut);
-
+module FDE_processor(pc, clock);
+	
 	output pc;
-	output ir;
+	output clock;
 	
-	input pcOut;
-	input clock;
-	input out;
 	
-	reg[16:0] pc;
-	reg[40:0] ir;
-	reg[8:0] insIdentifier;
-	reg[8:0] debugOut;
+	reg[15:0] pc;
+	reg[39:0] ir;
+	reg[7:0] insIdentifier;
+	reg[15:0] argument1;
+	reg[15:0] argument2;
+	wire[15:0] outputArgument;
+ 	reg[7:0] debugOut;
 	
-	wire[16:0] pcOut;
-	wire[40:0] out;
-	wire clock;
-	
+	wire[15:0] pcOut;
+	wire[39:0] out;
+	reg clock;
+	reg prevGedaan = 0;
+	reg eersteKlok;
 	initial begin
 	
+		clock = 0;
 		pc = 16'b0000000000000000;
-		
-	end
+		eersteKlok = 0;
 	
+	end
+	always begin
+	
+	#5	clock = ~clock;
+	
+	end
 	// Doe de opgehaalde instructie in de instruction register, en doe de program counter + 1
 	always @ (posedge clock) begin
-		ir = out;
-		pc = pcOut;
-		insIdentifier = ir[8:0];
+		if(eersteKlok != 0) begin
+				ir = out;
+				insIdentifier = ir[39:32];
+				argument1 = ir[31:16];
+				argument2 = ir[15:0];
+				if(prevGedaan == 0) begin
+					pc = pcOut;
+				end
+				prevGedaan = ~prevGedaan;
+		
+		end
+		else if(eersteKlok == 0) begin
+		
+			eersteKlok = 1;
+		
+		end
 	end
 	
-	instructie_decoder deca(insIdentifier, clock, debugOut);
+	
+
+	
+	instructie_decoder deca(insIdentifier, clock, argument1, argument2, outputArgument);
 	program_rom rom(pc, clock, out);
-	ALUcontroller alu(pc, 1'b1, pcOut, 6'b001000);
+	ALUcontroller alu(pc, 16'b0000000000000001, pcOut, 6'b001000);
 	
 endmodule
