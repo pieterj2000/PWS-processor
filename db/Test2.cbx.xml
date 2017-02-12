@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="Test2">
+		<CBX_INST_ENTRY INSTANCE_NAME="|FDE_processor|instructie_decoder:deca|program_ram:ram_controller|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_b9a1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|FDE_processor|program_rom:rom|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_cn71.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

@@ -1,16 +1,5 @@
 
-// Operation flag, deze specificeerd welke operatie er uitgevoerd moet worden.
-/*
-                Operation flag: 
 
-                NOT: 000001
-                OR:  000010
-                AND: 000100
-                ADD: 001000
-                SUB: 010000
-                XOR: 100000
-
-          */
 			 
 module ALU(
   a1, a2, out, opFlag, eFlag, cin, cout
@@ -26,7 +15,7 @@ module ALU(
   
 
   wire eFlag;
-  input [5:0] opFlag;
+  input [7:0] opFlag;
   
   wire coSub;
   reg coSubBuffer;
@@ -34,7 +23,7 @@ module ALU(
   reg coAddBuffer;
   wire [7:0] a1;
   wire [7:0] a2;
-  wire [5:0] opFlag;
+  wire [7:0] opFlag;
   wire cin;
   
   wire [7:0] poepynot;

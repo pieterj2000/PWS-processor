@@ -11,4 +11,5 @@ vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-proc
 vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/program_rom.v}
 vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/Instructie_decoder.v}
 vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/Register_controller.v}
+vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/program_ram.v}
 

@@ -24,7 +24,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "FDE_processor")
-  (DATE "02/11/2017 23:31:39")
+  (DATE "02/12/2017 16:29:16")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Web Edition")
@@ -36,7 +36,7 @@
     (INSTANCE pc\[0\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1553:1553:1553) (1553:1553:1553))
+        (IOPATH datain padio (1428:1428:1428) (1428:1428:1428))
       )
     )
   )
@@ -45,7 +45,7 @@
     (INSTANCE pc\[1\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1438:1438:1438) (1438:1438:1438))
+        (IOPATH datain padio (1553:1553:1553) (1553:1553:1553))
       )
     )
   )
@@ -54,7 +54,7 @@
     (INSTANCE pc\[2\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (1438:1438:1438) (1438:1438:1438))
       )
     )
   )
@@ -90,7 +90,7 @@
     (INSTANCE pc\[6\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1553:1553:1553) (1553:1553:1553))
+        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
       )
     )
   )
@@ -99,7 +99,7 @@
     (INSTANCE pc\[7\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1553:1553:1553) (1553:1553:1553))
+        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
       )
     )
   )
@@ -117,7 +117,7 @@
     (INSTANCE pc\[9\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1428:1428:1428) (1428:1428:1428))
+        (IOPATH datain padio (1533:1533:1533) (1533:1533:1533))
       )
     )
   )
@@ -126,7 +126,7 @@
     (INSTANCE pc\[10\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
       )
     )
   )
@@ -135,7 +135,7 @@
     (INSTANCE pc\[11\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1428:1428:1428) (1428:1428:1428))
+        (IOPATH datain padio (1553:1553:1553) (1553:1553:1553))
       )
     )
   )
@@ -144,7 +144,7 @@
     (INSTANCE pc\[12\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (1563:1563:1563) (1563:1563:1563))
       )
     )
   )
@@ -153,7 +153,7 @@
     (INSTANCE pc\[13\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
+        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
       )
     )
   )
@@ -162,7 +162,7 @@
     (INSTANCE pc\[14\]\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (1543:1543:1543) (1543:1543:1543))
       )
     )
   )
@@ -180,7 +180,7 @@
     (INSTANCE clock\~I.asynch_inst)
     (DELAY
       (ABSOLUTE
-        (IOPATH datain padio (1418:1418:1418) (1418:1418:1418))
+        (IOPATH datain padio (1553:1553:1553) (1553:1553:1553))
       )
     )
   )

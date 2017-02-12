@@ -50,6 +50,12 @@
 # 
 # Top level modules:
 # 	register_controller
+# vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/program_ram.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module program_ram
+# 
+# Top level modules:
+# 	program_ram
 # 
 vsim +altera -Lf altera_mf_ver -Lf altera_mf -do Test2_run_msim_rtl_verilog.do -l msim_transcript -gui work.FDE_processor
 # vsim +altera -Lf altera_mf_ver -Lf altera_mf -do Test2_run_msim_rtl_verilog.do -l msim_transcript -gui work.FDE_processor 
@@ -62,11 +68,15 @@ vsim +altera -Lf altera_mf_ver -Lf altera_mf -do Test2_run_msim_rtl_verilog.do -
 # Loading work.substractor
 # Loading work.bitsubber
 # Loading work.register_controller
-# Loading work.program_rom
+# Loading work.program_ram
 # Loading altera_mf_ver.altsyncram
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-3015) D:/Onderneming/16-bits processor/PWS-processor/FDE_processor.v(56): [PCDPC] - Port size (11 or 11) does not match connection size (16) for port 'address'. The port definition is at: D:/Onderneming/16-bits processor/PWS-processor/program_rom.v(40).
+# Loading work.program_rom
+# ** Warning: (vsim-3015) D:/Onderneming/16-bits processor/PWS-processor/Instructie_decoder.v(397): [PCDPC] - Port size (12 or 12) does not match connection size (13) for port 'address'. The port definition is at: D:/Onderneming/16-bits processor/PWS-processor/program_ram.v(40).
+# 
+#         Region: /FDE_processor/deca/ram_controller
+# ** Warning: (vsim-3015) D:/Onderneming/16-bits processor/PWS-processor/FDE_processor.v(61): [PCDPC] - Port size (11 or 11) does not match connection size (16) for port 'address'. The port definition is at: D:/Onderneming/16-bits processor/PWS-processor/program_rom.v(40).
 # 
 #         Region: /FDE_processor/rom
 # do Test2_run_msim_rtl_verilog.do 
@@ -117,9 +127,17 @@ vsim +altera -Lf altera_mf_ver -Lf altera_mf -do Test2_run_msim_rtl_verilog.do -
 # 
 # Top level modules:
 # 	register_controller
+# vlog -vlog01compat -work work +incdir+D:/Onderneming/16-bits\ processor/PWS-processor {D:/Onderneming/16-bits processor/PWS-processor/program_ram.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module program_ram
+# 
+# Top level modules:
+# 	program_ram
 # 
 add wave -position end  /FDE_processor/pc
 add wave -position end  /FDE_processor/clock
+add wave -position end  /FDE_processor/pcBuffy
+add wave -position end  /FDE_processor/ir
 add wave -position end  /FDE_processor/insIdentifier
 add wave -position end  /FDE_processor/argument1
 add wave -position end  /FDE_processor/argument2
@@ -128,11 +146,12 @@ add wave -position end  /FDE_processor/eersteKlok
 # 
 #           File in use by: DELLSANDRA  Hostname: DELL201111  ProcessID: 11068
 # 
-#           Attempting to use alternate WLF file "./wlft8bd058".
+#           Attempting to use alternate WLF file "./wlftwi4v79".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlft8bd058
+#           Using alternate file: ./wlftwi4v79
 # 
+add wave -position end  /FDE_processor/deca/outputArgument
 add wave -position end  /FDE_processor/deca/instructieOpCode
 add wave -position end  /FDE_processor/deca/bufferVal
 add wave -position end  /FDE_processor/deca/bufferVal2
@@ -140,7 +159,12 @@ add wave -position end  /FDE_processor/deca/write_enable
 add wave -position end  /FDE_processor/deca/chip_enable
 add wave -position end  /FDE_processor/deca/valueIn
 add wave -position end  /FDE_processor/deca/address
-add wave -position end  /FDE_processor/deca/outputArgument
 add wave -position end  /FDE_processor/deca/regControl/valueOut
 add wave -position end  /FDE_processor/deca/regControl/gpr
+run
+run
+run
+run
+run
+run
 run

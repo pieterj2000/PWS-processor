@@ -1,5 +1,30 @@
+/*
+flags register output
+5 bits: abcde
+a: EQF, equal flag (1 als gelijk)
+b: BGF, greater than flag (1 als eerste operand groter)
+c: ZF, zero flag (1 als nul)
+d: SF, sign flag (1 als negatief)
+e: OF, overflow flag (1 als overflow)
 
-module ALUcontroller(val1, val2, output3, opFlag);
+*/
+// Operation flag, deze specificeerd welke operatie er uitgevoerd moet worden.
+/*
+                Operation flag: 
+
+                NOT: 000000001
+                OR:  000000010
+                AND: 000000100
+                ADD: 000001000
+                SUB: 000010000
+                XOR: 000100000
+					 LSH: 001000000
+					 RSH: 010000000
+					 CMP: 100000000
+					 
+
+*/
+module ALUcontroller(val1, val2, output3, opFlag, flags);
 
 
   input [15:0] val1;
@@ -23,8 +48,11 @@ module ALUcontroller(val1, val2, output3, opFlag);
   output [15:0] output3;
   reg [15:0] output3;
   
-  input [5:0] opFlag;
-  reg [5:0] opBuffer;
+  output [5:0] flags;
+  reg [5:0] flags;
+  
+  input [8:0] opFlag;
+  reg [8:0] opBuffer;
   
   reg eFlag;
   
@@ -66,7 +94,16 @@ module ALUcontroller(val1, val2, output3, opFlag);
     if(^endReg === 1'bX) begin
       endReg = 0;
     end
-    
+	 
+	 if (opFlag != 9'b100000000) begin // als het geen compare instructie is
+		if (endReg == 1) begin // overflow flag zetten
+			flags[4] = 1;
+		end
+		else begin
+			flags[4] = 0;
+		end
+    end
+	 
     out1Buf = output1;
     out2Buf = output2;
     
@@ -89,8 +126,35 @@ module ALUcontroller(val1, val2, output3, opFlag);
         
     end
     
-    if(opFlag == 6'b010000) begin
-      
+	 if(opFlag == 8'b01000000) begin // lsh
+		output3 = val1 << 1;
+	 end
+	 if(opFlag == 8'b10000000) begin // rsh
+		output3 = val1 >> 1;
+	 end
+	 
+	 if(opFlag == 9'b100000000) begin // CMP
+		if(val1 == val2) begin
+			flags[0] = 1;
+			flags[1] = 0;
+		end
+		if(val1 > val2) begin
+			flags[0] = 0;
+			flags[1] = 1;
+		end
+		if(val1 < val2) begin
+			flags[0] = 0;
+			flags[1] = 0;
+		end
+	 end 
+		
+    if(opFlag == 6'b010000) begin // sub
+      if(val1 < val2) begin // sign flag zettens
+			flags[3] = 1;
+		end
+		else begin
+			flags[3] = 0;
+		end
 		
       // 8-bits aftrekken
       if(val5 == 0 && val6 == 0 && endReg) begin
@@ -105,6 +169,16 @@ module ALUcontroller(val1, val2, output3, opFlag);
       end
     end
 //    $display("Ik kan rekenen en de output is: %d", output3); 
+
+	 if(opFlag != 9'b100000000) begin // als het geen cmp instructie is
+		if(output3 == 0) begin // zero flag zetten
+			flags[2] = 1;
+		end
+		else begin
+			flags[2] = 0;
+		end
+	 end
+	 
   end
   
 endmodule
