@@ -7,6 +7,9 @@ entity register_controller is
         clock           : in     vl_logic;
         address         : in     vl_logic_vector(3 downto 0);
         valueIn         : in     vl_logic_vector(15 downto 0);
-        valueOut        : out    vl_logic_vector(15 downto 0)
+        valueOut        : out    vl_logic_vector(15 downto 0);
+        led_register    : out    vl_logic_vector(7 downto 0);
+        schakelaar_register: in     vl_logic_vector(7 downto 0);
+        knoppen_register: in     vl_logic_vector(3 downto 0)
     );
 end register_controller;

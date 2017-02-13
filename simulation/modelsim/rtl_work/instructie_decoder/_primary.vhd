@@ -6,6 +6,9 @@ entity instructie_decoder is
         clock           : in     vl_logic;
         argument1       : in     vl_logic_vector(15 downto 0);
         argument2       : in     vl_logic_vector(15 downto 0);
-        outputArgument  : out    vl_logic_vector(15 downto 0)
+        outputArgument  : out    vl_logic_vector(15 downto 0);
+        led_register    : out    vl_logic_vector(7 downto 0);
+        schakelaar_register: in     vl_logic_vector(7 downto 0);
+        knoppen_register: in     vl_logic_vector(3 downto 0)
     );
 end instructie_decoder;

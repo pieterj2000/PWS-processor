@@ -73,12 +73,32 @@ vsim +altera -Lf altera_mf_ver -Lf altera_mf -do Test2_run_msim_rtl_verilog.do -
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
 # Loading work.program_rom
-# ** Warning: (vsim-3015) D:/Onderneming/16-bits processor/PWS-processor/Instructie_decoder.v(397): [PCDPC] - Port size (12 or 12) does not match connection size (13) for port 'address'. The port definition is at: D:/Onderneming/16-bits processor/PWS-processor/program_ram.v(40).
+# ** Warning: (vsim-3015) D:/Onderneming/16-bits processor/PWS-processor/Instructie_decoder.v(798): [PCDPC] - Port size (9 or 9) does not match connection size (6) for port 'opFlag'. The port definition is at: D:/Onderneming/16-bits processor/PWS-processor/ALUcontroller.v(27).
+# 
+#         Region: /FDE_processor/deca/alu
+# ** Warning: (vsim-3015) D:/Onderneming/16-bits processor/PWS-processor/ALUcontroller.v(69): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'opFlag'. The port definition is at: D:/Onderneming/16-bits processor/PWS-processor/ALU.v(5).
+# 
+#         Region: /FDE_processor/deca/alu/piet
+# ** Warning: (vsim-3015) D:/Onderneming/16-bits processor/PWS-processor/ALUcontroller.v(70): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'opFlag'. The port definition is at: D:/Onderneming/16-bits processor/PWS-processor/ALU.v(5).
+# 
+#         Region: /FDE_processor/deca/alu/piet2
+# ** Warning: (vsim-3015) D:/Onderneming/16-bits processor/PWS-processor/Instructie_decoder.v(800): [PCDPC] - Port size (12 or 12) does not match connection size (13) for port 'address'. The port definition is at: D:/Onderneming/16-bits processor/PWS-processor/program_ram.v(40).
 # 
 #         Region: /FDE_processor/deca/ram_controller
-# ** Warning: (vsim-3015) D:/Onderneming/16-bits processor/PWS-processor/FDE_processor.v(61): [PCDPC] - Port size (11 or 11) does not match connection size (16) for port 'address'. The port definition is at: D:/Onderneming/16-bits processor/PWS-processor/program_rom.v(40).
+# ** Warning: (vsim-3015) D:/Onderneming/16-bits processor/PWS-processor/FDE_processor.v(87): [PCDPC] - Port size (11 or 11) does not match connection size (16) for port 'address'. The port definition is at: D:/Onderneming/16-bits processor/PWS-processor/program_rom.v(40).
 # 
 #         Region: /FDE_processor/rom
+# ** Warning: (vsim-3017) D:/Onderneming/16-bits processor/PWS-processor/FDE_processor.v(88): [TFMPC] - Too few port connections. Expected 5, found 4.
+# 
+#         Region: /FDE_processor/alu
+# ** Warning: (vsim-3722) D:/Onderneming/16-bits processor/PWS-processor/FDE_processor.v(88): [TFMPC] - Missing connection for port 'flags'.
+# 
+# ** Warning: (vsim-3015) D:/Onderneming/16-bits processor/PWS-processor/ALUcontroller.v(69): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'opFlag'. The port definition is at: D:/Onderneming/16-bits processor/PWS-processor/ALU.v(5).
+# 
+#         Region: /FDE_processor/alu/piet
+# ** Warning: (vsim-3015) D:/Onderneming/16-bits processor/PWS-processor/ALUcontroller.v(70): [PCDPC] - Port size (8 or 8) does not match connection size (9) for port 'opFlag'. The port definition is at: D:/Onderneming/16-bits processor/PWS-processor/ALU.v(5).
+# 
+#         Region: /FDE_processor/alu/piet2
 # do Test2_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -134,37 +154,38 @@ vsim +altera -Lf altera_mf_ver -Lf altera_mf -do Test2_run_msim_rtl_verilog.do -
 # Top level modules:
 # 	program_ram
 # 
-add wave -position end  /FDE_processor/pc
-add wave -position end  /FDE_processor/clock
-add wave -position end  /FDE_processor/pcBuffy
-add wave -position end  /FDE_processor/ir
-add wave -position end  /FDE_processor/insIdentifier
-add wave -position end  /FDE_processor/argument1
-add wave -position end  /FDE_processor/argument2
-add wave -position end  /FDE_processor/eersteKlok
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint sim:/FDE_processor/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: DELLSANDRA  Hostname: DELL201111  ProcessID: 11068
 # 
-#           Attempting to use alternate WLF file "./wlftwi4v79".
+#           Attempting to use alternate WLF file "./wlftmb5b3i".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftwi4v79
+#           Using alternate file: ./wlftmb5b3i
 # 
-add wave -position end  /FDE_processor/deca/outputArgument
-add wave -position end  /FDE_processor/deca/instructieOpCode
+add wave -position end  /FDE_processor/argument1
+add wave -position end  /FDE_processor/argument2
+add wave -position end  /FDE_processor/insIdentifier
+add wave -position end  /FDE_processor/ir
+add wave -position end  /FDE_processor/led_pin
+add wave -position end  /FDE_processor/led_register
+add wave -position end  /FDE_processor/pc
+add wave -position end  /FDE_processor/deca/address
 add wave -position end  /FDE_processor/deca/bufferVal
 add wave -position end  /FDE_processor/deca/bufferVal2
-add wave -position end  /FDE_processor/deca/write_enable
 add wave -position end  /FDE_processor/deca/chip_enable
+add wave -position end  /FDE_processor/deca/led_register
+add wave -position end  /FDE_processor/deca/outputArgument
 add wave -position end  /FDE_processor/deca/valueIn
-add wave -position end  /FDE_processor/deca/address
-add wave -position end  /FDE_processor/deca/regControl/valueOut
+add wave -position end  /FDE_processor/deca/write_enable
+add wave -position end  /FDE_processor/deca/regControl/buffyAddress
 add wave -position end  /FDE_processor/deca/regControl/gpr
-run
-run
-run
-run
+add wave -position end  /FDE_processor/deca/regControl/led_register
+add wave -position end  /FDE_processor/deca/regControl/valueOut
+force -freeze sim:/FDE_processor/clock 1 0, 0 {2 ps} -r 5
 run
 run
 run

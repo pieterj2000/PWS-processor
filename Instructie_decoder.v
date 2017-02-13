@@ -1,19 +1,32 @@
-module instructie_decoder(instructie, clock, argument1, argument2, outputArgument);
+module instructie_decoder(instructie, clock, argument1, argument2, outputArgument, led_register, schakelaar_register, knoppen_register);
 
 input clock;
 input instructie;
 input argument1;
 input argument2;
+input schakelaar_register;
+input knoppen_register;
 
+output led_register;
 output outputArgument;
+
 wire[7:0] instructie;
 wire[15:0] argument1;
 wire[15:0] argument2;
+
+reg[7:0] led_register;
+
+wire[7:0] schakelaar_register;
+wire[3:0] knoppen_register;
+
+
 reg[15:0] argumentBuffer;
 reg[15:0] argument2Buffer;
 
 reg[15:0] outputArgument;
 wire[15:0] outputArgumentBuffer;
+
+wire[7:0] led_register_buffer;
 
 wire[5:0] flagRegister;
 
@@ -202,6 +215,7 @@ reg[3:0] address;
 	8'b00100001 : begin
 							address = argument1[3:0];
 							write_enable = 0;
+							
 							chip_enable = 1;
 							#1
 							chip_enable = 0;
@@ -775,7 +789,13 @@ reg[3:0] address;
 					  end	
 		endcase
 	end
+	
+	always @ (*) begin
+	//	led_register = led_register_buffer;
+	//	led_register[0] = 1;
+	end
+	
 	ALUcontroller alu(bufferVal, bufferVal2, outputArgumentBuffer, instructieOpCode, flagRegister);
-	register_controller regControl(chip_enable, write_enable, clock, address, valueIn, valueOut);
+	register_controller regControl(chip_enable, write_enable, clock, address, valueIn, valueOut,led_register_buffer, schakelaar_register, knoppen_register);
 	program_ram  ram_controller(ram_adres, clock, ram_data, ram_write_enable, ram_output);
 endmodule

@@ -4,33 +4,33 @@ K3
 cModel Technology
 Z0 dD:\Onderneming\16-bits processor\PWS-processor\simulation\modelsim
 vadder
-IeOfQQ_B91S1dLON@Wikel2
+I[iE217XcNRGi2`iS2aKzI3
 VdRQ0N[Q1<nbJdo5HGnh2<0
 Z1 dD:\Onderneming\16-bits processor\PWS-processor\simulation\modelsim
-Z2 w1480679068
+Z2 w1486878106
 Z3 8D:/Onderneming/16-bits processor/PWS-processor/ALU.v
 Z4 FD:/Onderneming/16-bits processor/PWS-processor/ALU.v
-L0 170
+L0 159
 Z5 OV;L;10.1d;51
 r1
 31
-Z6 !s108 1486912529.551000
+Z6 !s108 1487023480.787000
 Z7 !s107 D:/Onderneming/16-bits processor/PWS-processor/ALU.v|
 Z8 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Onderneming/16-bits processor/PWS-processor|D:/Onderneming/16-bits processor/PWS-processor/ALU.v|
 Z9 o-vlog01compat -work work -O0
 Z10 !s92 -vlog01compat -work work {+incdir+D:/Onderneming/16-bits processor/PWS-processor} -O0
 !i10b 1
-!s100 Vbg:B;^[3TzkMU2jY7D3G1
+!s100 3d^K]Wh?Ubf7WRX`P29Wj2
 !s85 0
 !s101 -O0
 vALU
-I8HA`?0Ydg@;S`2>8;HU3S1
-VKPClma7_KZJOkWbg>M5M@0
+Ib0zJUMaJLA;V;Tm54GCzM2
+VmW2DF@QJk;B=C79SOX80J2
 R1
 R2
 R3
 R4
-L0 15
+L0 4
 R5
 r1
 31
@@ -41,17 +41,17 @@ R9
 R10
 n@a@l@u
 !i10b 1
-!s100 DcPNN:ZZahWVo>iDHjfUz0
+!s100 IhUWBJUB=AH7>A80MVbaf0
 !s85 0
 !s101 -O0
 vALUcontroller
-I75<8c=W7DfY]]mBN0LDdE2
-V[JzEROlZFEWmAdMo=3>dX3
+IS;gezQUjgQZK5><05PIWk2
+VDQSmJ9J0fF05kX=WeMQ1T1
 R1
-w1486844005
+R2
 8D:/Onderneming/16-bits processor/PWS-processor/ALUcontroller.v
 FD:/Onderneming/16-bits processor/PWS-processor/ALUcontroller.v
-L0 2
+L0 27
 R5
 r1
 31
@@ -59,20 +59,20 @@ R9
 R10
 n@a@l@ucontroller
 !i10b 1
-!s100 2BG6=0K<^A[]:I^jPO<0^1
+!s100 ZmcLc?o^9B5SiLm>oj;N01
 !s85 0
-!s108 1486912529.838000
+!s108 1487023481.098000
 !s107 D:/Onderneming/16-bits processor/PWS-processor/ALUcontroller.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Onderneming/16-bits processor/PWS-processor|D:/Onderneming/16-bits processor/PWS-processor/ALUcontroller.v|
 !s101 -O0
 vbitadder
-IC1aBYP3A4mQ_<AT_?lJ]>2
+IK_E11`k79dG_Q5QSe@4B>3
 V2zdFnD^BN2;24o0;_<oTG3
 R1
 R2
 R3
 R4
-L0 316
+L0 305
 R5
 r1
 31
@@ -82,17 +82,17 @@ R8
 R9
 R10
 !i10b 1
-!s100 `zN1h@Bbo`h5hQ7V0;JTW1
+!s100 PkYh^T6_03^YF@fYNmFea1
 !s85 0
 !s101 -O0
 vbitsubber
-I9?n<DNSnIcMXcJk:gUGU62
+IAa3z17zg8l>aLfXVeZ=723
 V`k:NNDT<D15i_M0?khngU3
 R1
 R2
 R3
 R4
-L0 348
+L0 337
 R5
 r1
 31
@@ -102,14 +102,14 @@ R8
 R9
 R10
 !i10b 1
-!s100 3g4Odg6fKD^Y89Yf^aMHH0
+!s100 MY2klg_d>g<6jC;HiedZ>1
 !s85 0
 !s101 -O0
 vFDE_processor
-InWLb8jIUJS;5>9<>HcLkE3
-VBJN<Y14OI@ZllJ5jz1_O>3
+IXFZ^aCWN:EP05HlhX2N0d0
+VFc1U`n:nMNG<WGQ9<@IgF3
 R1
-w1486912391
+w1487022417
 8D:/Onderneming/16-bits processor/PWS-processor/FDE_processor.v
 FD:/Onderneming/16-bits processor/PWS-processor/FDE_processor.v
 L0 1
@@ -120,17 +120,17 @@ R9
 R10
 n@f@d@e_processor
 !i10b 1
-!s100 DL6c2Yic2:cWi_Z8AZflW3
+!s100 bPP0^2f7G8_?eMaX_MfBM0
 !s85 0
-!s108 1486912529.946000
+!s108 1487023481.214000
 !s107 D:/Onderneming/16-bits processor/PWS-processor/FDE_processor.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Onderneming/16-bits processor/PWS-processor|D:/Onderneming/16-bits processor/PWS-processor/FDE_processor.v|
 !s101 -O0
 vinstructie_decoder
-I3FLaN0RLYD52^Ko:D8Vio0
-V2GBXY8i1g>I@WbQ@;QSIQ2
+I2S<h2>fQ4>;hN4SQ^D2Xn3
+V^eLCP`Ad?:@gOA^[9Ric_0
 R1
-w1486912490
+w1487023271
 8D:/Onderneming/16-bits processor/PWS-processor/Instructie_decoder.v
 FD:/Onderneming/16-bits processor/PWS-processor/Instructie_decoder.v
 L0 1
@@ -140,9 +140,9 @@ r1
 R9
 R10
 !i10b 1
-!s100 CP_Gc1nUo099=JF^=M8Ed3
+!s100 @[hgO5RfXgfOHB;KmZoME2
 !s85 0
-!s108 1486912530.150000
+!s108 1487023481.433000
 !s107 D:/Onderneming/16-bits processor/PWS-processor/Instructie_decoder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Onderneming/16-bits processor/PWS-processor|D:/Onderneming/16-bits processor/PWS-processor/Instructie_decoder.v|
 !s101 -O0
@@ -160,7 +160,7 @@ R5
 r1
 !s85 0
 31
-!s108 1486912530.396000
+!s108 1487023481.838000
 !s107 D:/Onderneming/16-bits processor/PWS-processor/program_ram.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Onderneming/16-bits processor/PWS-processor|D:/Onderneming/16-bits processor/PWS-processor/program_ram.v|
 !s101 -O0
@@ -182,15 +182,15 @@ R10
 !i10b 1
 !s100 `WaIORBRD?0DL`nB05d2Y2
 !s85 0
-!s108 1486912530.047000
+!s108 1487023481.329000
 !s107 D:/Onderneming/16-bits processor/PWS-processor/program_rom.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Onderneming/16-bits processor/PWS-processor|D:/Onderneming/16-bits processor/PWS-processor/program_rom.v|
 !s101 -O0
 vregister_controller
-IdagO^AgOCM0JzT@i6E8Zo2
-V;5O0[bkPo7A=26_U9@g<M1
+IckRKM7M[1ncdQ3e?nIMnV3
+Vb5:SCeDfA>DhZ;VccGWYG3
 R1
-w1486849673
+w1487023377
 8D:/Onderneming/16-bits processor/PWS-processor/Register_controller.v
 FD:/Onderneming/16-bits processor/PWS-processor/Register_controller.v
 L0 1
@@ -200,20 +200,20 @@ r1
 R9
 R10
 !i10b 1
-!s100 _28Khn`OBml=SWo^JNQK>2
+!s100 NJ36oOMfLkMNaF]D@bSBZ3
 !s85 0
-!s108 1486912530.292000
+!s108 1487023481.722000
 !s107 D:/Onderneming/16-bits processor/PWS-processor/Register_controller.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Onderneming/16-bits processor/PWS-processor|D:/Onderneming/16-bits processor/PWS-processor/Register_controller.v|
 !s101 -O0
 vsubstractor
-IecObzZkc@1e?;YRUoPzYD1
+IND1K6jjJEGlF6aaUi3Lk?0
 Vh@0Ng<QXRffDN3fAz?O[21
 R1
 R2
 R3
 R4
-L0 243
+L0 232
 R5
 r1
 31
@@ -223,6 +223,6 @@ R8
 R9
 R10
 !i10b 1
-!s100 ki89fh12F^K0i?mYXIFeS0
+!s100 0kG>HHnNU?_2DXmGZmE771
 !s85 0
 !s101 -O0

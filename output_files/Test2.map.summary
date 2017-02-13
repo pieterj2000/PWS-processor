@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sun Feb 12 16:29:09 2017
+Analysis & Synthesis Status : Successful - Mon Feb 13 23:03:00 2017
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
 Revision Name : Test2
 Top-level Entity Name : FDE_processor
 Family : Cyclone II
-Total logic elements : 0
-    Total combinational functions : 0
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 33
+Total logic elements : 42
+    Total combinational functions : 42
+    Dedicated logic registers : 32
+Total registers : 32
+Total pins : 22
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

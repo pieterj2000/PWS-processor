@@ -61,4 +61,26 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name QIP_FILE program_ram.qip
+set_location_assignment PIN_17 -to clock
+set_location_assignment PIN_3 -to led_pin
+set_location_assignment PIN_104 -to knoppen_register[3]
+set_location_assignment PIN_101 -to knoppen_register[2]
+set_location_assignment PIN_99 -to knoppen_register[1]
+set_location_assignment PIN_96 -to knoppen_register[0]
+set_location_assignment PIN_72 -to led_register[7]
+set_location_assignment PIN_70 -to led_register[6]
+set_location_assignment PIN_67 -to led_register[5]
+set_location_assignment PIN_64 -to led_register[4]
+set_location_assignment PIN_60 -to led_register[3]
+set_location_assignment PIN_58 -to led_register[2]
+set_location_assignment PIN_55 -to led_register[1]
+set_location_assignment PIN_52 -to led_register[0]
+set_location_assignment PIN_103 -to schakelaar_register[7]
+set_location_assignment PIN_100 -to schakelaar_register[6]
+set_location_assignment PIN_97 -to schakelaar_register[5]
+set_location_assignment PIN_94 -to schakelaar_register[4]
+set_location_assignment PIN_92 -to schakelaar_register[3]
+set_location_assignment PIN_90 -to schakelaar_register[2]
+set_location_assignment PIN_88 -to schakelaar_register[1]
+set_location_assignment PIN_86 -to schakelaar_register[0]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
